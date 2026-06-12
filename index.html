@@ -3,23 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Website For Games</title>
 </head>
-<body onload="printBoard()">
-  <main class="home-fullscreen">
-    <div id="player-count-row">
-      <button id="two-player-btn" class="playerCount" onclick="twoPlayerTrue()">Two Player</button>
-      <button id="computer-btn" class="playerCount" onclick="twoPlayerFalse()">Computer</button>
-    </div>
-    <div id="dificulty-row">
-    </div>
-    <p id="winner-text"></p>
-    <div id="reset-button-container"></div>
-    <div id="gameBoard">
-      <p id="text"></p>
-    </div>
-  </main>
-  <script src="script.js"></script>
+<body>
+    <main class="home-fullscreen">
+        <div class="home-center">
+            <h1>Welcome</h1>
+            <div class="home-buttons">
+                <a class="button button-large" href="Tick-Tac-Toe.html">Tick Tac Toe</a>
+                <a class="button button-large" href="Connect-4.html">Connect 4</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
