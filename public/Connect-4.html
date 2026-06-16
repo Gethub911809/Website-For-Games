@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Connect-4.css">
+  <title>Tick-Tac-Toe</title>
+</head>
+<body onload="boardInit()">
+  <main class="home-fullscreen">
+    <div id="menu">
+        <button onclick="createRoom()">Create Room</button>
+
+        <br><br>
+
+        <input id="roomInput" placeholder="Enter room code">
+        <button onclick="joinRoom(document.getElementById('roomInput').value)">
+            Join Room
+        </button>
+
+        <p id="roomCodeText"></p>
+    </div>
+    <p id="winner-text"></p>
+    <div id="reset-button-container"></div>
+    <div id="gameBoard">
+    </div>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="Connect-4.js"></script>
+</body>
+</html>
